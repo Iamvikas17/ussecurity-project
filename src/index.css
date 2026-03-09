@@ -1,0 +1,55 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */ /*
+@import 'tailwindcss';
+@theme {
+  --color-brand-blue: #1e3a8a;
+  --color-brand-gold: #fbbf24;
+  /* Creating custom design tokens for USS Security */ /*
+  --color-uss-navy: #1e3a8a; /* The authoritative main color */ /*
+  --color-uss-gold: #fbbf24; /* For "Alert" or "Security" accents */ /*
+  --color-uss-slate: #0f172a; /* For professional text and footers */ /*
+
+   You can even customize your border radius for a "tougher" look */ /*
+  --radius-uss: 0.25rem;
+}
+*/
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors derived from the USS Logo */
+  --color-uss-navy: #0a1a5c;
+  --color-uss-gold: #fef200;
+  --color-uss-black: #000000;
+
+  /* Adding a custom font for a professional look */
+  --font-display: "Inter", "sans-serif";
+}
+
+/* Base resets to use your brand colors */
+body {
+  @apply bg-slate-50 text-uss-black font-display antialiased;
+}
+/* Ensure the main page content stays on top of the footer */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  will-change: opacity, transform; /* Improves performance on mobile */
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Specifically for the Hero so it doesn't wait for scroll */
+.hero-reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
