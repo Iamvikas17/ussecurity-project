@@ -151,7 +151,7 @@ export default function Header() {
             CONTACT
           </NavLink>
 
-          <NavLink to="/training" className={activeStyles}>
+          <NavLink to="/client" className={activeStyles}>
             CLIENTS
           </NavLink>
         </div>
