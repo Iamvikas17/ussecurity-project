@@ -166,7 +166,7 @@ export default function ClientLogos() {
                 alt={client.name}
                 style={{ backgroundColor: client.bg }}
                 /* Grayscale by default, full color/bright on hover */
-                className="max-w-full max-h-full object-contain opacity-100 bg-[client.color]  group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                className="max-w-full max-h-full object-contain opacity-100 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
               />
             </motion.div>
           ))}

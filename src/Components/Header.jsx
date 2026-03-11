@@ -196,7 +196,7 @@ export default function Header() {
             CONTACT
           </NavLink>
 
-          <NavLink to="/training" onClick={toggleMenu} className={activeStyles}>
+          <NavLink to="/client" onClick={toggleMenu} className={activeStyles}>
             ClIENTS
           </NavLink>
         </div>
