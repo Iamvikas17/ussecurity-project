@@ -73,16 +73,22 @@
 import { motion } from "framer-motion";
 import Bounser1 from "../assets/Home/Bounser.jpg";
 import Bounser2 from "../assets/Home/enhancedBouncers.jpg";
+import Photo1 from "../assets/Home/Gallery1.jpeg";
+import Photo2 from "../assets/Home/Gallery2.jpeg";
+import Photo3 from "../assets/Home/Gallery3.jpeg";
+import Photo4 from "../assets/Home/Gallery4.jpeg";
+import Photo5 from "../assets/Home/Gallery5.jpeg";
+import Photo6 from "../assets/Home/Gallery6.jpeg";
 const galleryImages = [
   {
     id: 1,
     title: "Industrial Perimeter Guarding",
-    src: "https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800",
+    src: Photo1,
   },
   {
     id: 2,
     title: "VVIP Event Security",
-    src: Bounser2,
+    src: Photo6,
   },
   {
     id: 3,
@@ -92,22 +98,22 @@ const galleryImages = [
   {
     id: 4,
     title: "Corporate Facility Monitoring",
-    src: "https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=800",
+    src: Photo2,
   },
   {
     id: 5,
     title: "Armed Transit Protection",
-    src: "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=800",
+    src: Photo3,
   },
   {
     id: 6,
     title: "Crowd Control Protocols",
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800",
+    src: Photo4,
   },
   {
     id: 7,
     title: "Tactical Response Unit",
-    src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800",
+    src: Photo5,
   },
   {
     id: 8,
@@ -161,7 +167,7 @@ export default function WorkGallery() {
                 src={image.src}
                 alt={image.title}
                 className={`w-full h-full object-cover transition-all duration-700 
-                  ${isMobile ? "grayscale-0 brightness-70" : " group-hover:grayscale-0 group-hover:scale-110 group-hover:brightness-50"}`}
+                  ${isMobile ? "grayscale-0 brightness-70" : " group-hover:grayscale-0 group-hover:scale-110 group-hover:brightness-60"}`}
               />
 
               {/* Information Overlay: Always visible on mobile, hover-only on desktop */}

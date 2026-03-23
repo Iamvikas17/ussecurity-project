@@ -408,7 +408,7 @@ function Footer() {
             Quick Links
           </h4>
           <ul className="text-gray-400 text-sm space-y-4 tracking-wider">
-            {["Home", "About", "Service", "Training", "Clients"].map((l) => (
+            {["Home", "About", "Service", "Whyus", "Client"].map((l) => (
               <li key={l}>
                 <Link
                   to={l === "Home" ? "/" : `/${l.toLowerCase()}`}

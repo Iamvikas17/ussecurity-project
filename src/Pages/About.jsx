@@ -116,6 +116,8 @@ const AboutPage = () => {
             </div>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
+             Experties in Warehouse management and providing complete warehouse solution <br/>
+             worked along with warehouses such as Amazon,Flipkart,Voltas,DHL and many more in warehouse industries
               Working alongside the founder, Col. Rohit Kapila ensures that our
               rapid response and training protocols remain the gold standard in
               the industry, bringing military-grade discipline to every

@@ -1,81 +1,3 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Link } from "react-router-dom";
-
-// // Use your actual assets here
-// import skygold from "../assets/clients/Skygold.jpeg";
-// import sunfarama from "../assets/clients/sun-farmalogo.png";
-// import scootsy from "../assets/clients/scootsy.jpeg";
-// import podarSc from "../assets/clients/podar_international.png";
-// import memom from "../assets/clients/Pantaloons_Logo.png";
-// const ClientSilder = () => {
-//   const clients = [
-//     { name: "Sky Gold", src: skygold },
-//     { name: "Sun Pharma", src: sunfarama },
-//     { name: "scootsy", src: scootsy },
-//     { name: "Podar school", src: podarSc },
-//     { name: "Thane Federation", src: memom },
-//   ];
-
-//   // Triple the items for a smooth, never-ending infinite scroll
-//   const sliderItems = [...clients, ...clients, ...clients];
-
-//   return (
-//     <section className="py-24 bg-[#05103e] border-t border-white/5 overflow-hidden">
-//       <div className="max-w-7xl mx-auto px-6">
-//         {/* Elite Heading in USS Gold & White */}
-//         <div className="text-center mb-20">
-//           <h4 className="text-[#fef200] font-black text-xs uppercase tracking-[0.4em] mb-4">
-//             Established 2010
-//           </h4>
-//           <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter leading-none">
-//             <Link to="training">Our Clients</Link> <span className="text-[#fef200] italic">&</span>{" "}
-
-//           </h2>
-//           <div className="h-1.5 w-32 bg-[#fef200] mx-auto mt-6 rounded-full shadow-[0_0_20px_rgba(254,242,0,0.3)]"></div>
-//         </div>
-
-//         {/* Infinite Logo Slider using Framer Motion */}
-//         <div className="relative flex items-center group">
-//           <motion.div
-//             className="flex items-center gap-16 md:gap-32 whitespace-nowrap"
-//             animate={{ x: ["0%", "-50%"] }}
-//             transition={{
-//               repeat: Infinity,
-//               ease: "linear",
-//               duration: 25, // Speed of the crawl
-//             }}
-//           >
-//             {sliderItems.map((item, index) => (
-//               <div
-//                 key={index}
-//                 className="flex-shrink-0 w-[180px] md:w-[220px] flex justify-center items-center"
-//               >
-//                 <img
-//                   src={item.src}
-//                   alt={item.name}
-//                   className="h-16 md:h-20 w-auto object-contain brightness-125   group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 cursor-pointer"
-//                 />
-//               </div>
-//             ))}
-//           </motion.div>
-
-//           {/* Professional Edge Gradients for Depth */}
-//           {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-[#0a1a5c] to-transparent z-10"></div>
-//           <div className="pointer-events-none absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-[#0a1a5c] to-transparent z-10"></div> */}
-//         </div>
-
-//         {/* Trusted Footer Text */}
-//         <p className="text-center mt-24 text-gray-500 text-[10px] font-bold uppercase tracking-[0.5em]">
-//           Certified Security Force • Trusted by 500+ Corporate Clients
-//           Nationwide
-//         </p>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ClientSilder;
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -146,7 +68,7 @@ const ClientSilder = () => {
             }}
           >
             {sliderItems.map((item, index) => (
-              <Link to="training">
+              <Link to="client">
                 {" "}
                 <div
                   key={index}

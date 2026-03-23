@@ -138,6 +138,50 @@ const clients = [
   // ... add all imported logos to this array
 ];
 
+// export default function ClientLogos() {
+//   return (
+//     <section className="py-24 bg-[#0a1a5c]">
+//       <div className="max-w-7xl mx-auto px-6">
+//         {/* Header: Minimalist */}
+//         <div className="text-center mb-20">
+//           <h4 className="text-[#fef200] font-black text-xs uppercase tracking-[0.6em] mb-4">
+//             Our Clients
+//           </h4>
+//           <h2 className="text-white text-5xl md:text-6xl font-black uppercase tracking-tighter">
+//             TRUSTED BY{" "}
+//             <span className="text-[#fef200] italic">INDUSTRY LEADERS.</span>
+//           </h2>
+//         </div>
+
+//         {/* The Logo Cloud */}
+//         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0.5 bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
+//           {clients.map((client, i) => (
+//             <motion.div
+//               key={i}
+//               whileHover={{ backgroundColor: "rgba(254, 242, 0, 0.05)" }}
+//               className="bg-[#091853] aspect-video flex items-center justify-center p-8 border border-white/5 group transition-all"
+//             >
+//               <img
+//                 src={client.logo}
+//                 alt={client.name}
+//                 style={{ backgroundColor: client.bg }}
+//                 /* Grayscale by default, full color/bright on hover */
+//                 className="max-w-full max-h-full object-contain opacity-100 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+//               />
+//             </motion.div>
+//           ))}
+//         </div>
+
+//         {/* Bottom Tagline */}
+//         <div className="mt-16 text-center">
+//           <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.5em]">
+//             Securing 1000+ Assets Across 6 Major States
+//           </p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 export default function ClientLogos() {
   return (
     <section className="py-24 bg-[#0a1a5c]">
@@ -154,19 +198,22 @@ export default function ClientLogos() {
         </div>
 
         {/* The Logo Cloud */}
+        {/* FIX: Changed grid-cols-2 to grid-cols-1 on very small screens or 
+            kept 2 but reduced the padding to let the logo breathe */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0.5 bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
           {clients.map((client, i) => (
             <motion.div
               key={i}
               whileHover={{ backgroundColor: "rgba(254, 242, 0, 0.05)" }}
-              className="bg-[#091853] aspect-video flex items-center justify-center p-8 border border-white/5 group transition-all"
+              /* FIX: Changed p-8 to p-4 on mobile so the logo can be larger */
+              className="bg-[#091853] aspect-video flex items-center justify-center p-4 md:p-10 border border-white/5 group transition-all"
             >
               <img
                 src={client.logo}
                 alt={client.name}
                 style={{ backgroundColor: client.bg }}
-                /* Grayscale by default, full color/bright on hover */
-                className="max-w-full max-h-full object-contain opacity-100 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
+                /* FIX: Added w-full and h-auto to ensure it scales to the container */
+                className="max-w-[80%] max-h-[70%] md:max-w-full md:max-h-full object-contain opacity-100 transition-all duration-500"
               />
             </motion.div>
           ))}

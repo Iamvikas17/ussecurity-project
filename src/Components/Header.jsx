@@ -147,6 +147,9 @@ export default function Header() {
           <NavLink to="/service" className={activeStyles}>
             SERVICE
           </NavLink>
+          <NavLink to="/Whyus" className={activeStyles}>
+            WHY US
+          </NavLink>
           <NavLink to="/contact" className={activeStyles}>
             CONTACT
           </NavLink>
@@ -191,6 +194,9 @@ export default function Header() {
           </NavLink>
           <NavLink to="/service" onClick={toggleMenu} className={activeStyles}>
             SERVICES
+          </NavLink>
+          <NavLink to="/Whyus" onClick={toggleMenu} className={activeStyles}>
+            WHY US
           </NavLink>
           <NavLink to="/contact" onClick={toggleMenu} className={activeStyles}>
             CONTACT
