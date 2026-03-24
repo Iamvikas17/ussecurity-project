@@ -13,12 +13,12 @@ import skyGlod from "../assets/clients/Sky_gold_logo.webp";
 import Dosti from "../assets/clients/Dosti_logo.svg";
 const ClientSilder = () => {
   const clients = [
-    { name: "Sky Gold", src: skyGlod },
-    { name: "Sun Pharma", src: sunfarama },
-    { name: "Scootsy", src: scootsy },
-    { name: "Podar School", src: podarSc },
-    { name: "Pantaloons", src: memom },
-    { name: "Dosti ", src: Dosti },
+    { id: 1, name: "Sky Gold", src: skyGlod },
+    { id: 2, name: "Sun Pharma", src: sunfarama },
+    { id: 3, name: "Scootsy", src: scootsy },
+    { id: 4, name: "Podar School", src: podarSc },
+    { id: 5, name: "Pantaloons", src: memom },
+    { id: 6, name: "Dosti ", src: Dosti },
   ];
 
   const sliderItems = [...clients, ...clients, ...clients];
@@ -68,7 +68,7 @@ const ClientSilder = () => {
             }}
           >
             {sliderItems.map((item, index) => (
-              <Link to="client">
+              <Link to="client" key={`${item.id}-${index}`}>
                 {" "}
                 <div
                   key={index}

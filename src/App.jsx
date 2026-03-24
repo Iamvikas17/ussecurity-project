@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
+import SecurityLoader from "./Components/SecurityLoader";
+import ScrollUpButton from "./Components/ScrollUpButton";
 // import ClientsPage from "./Pages/Client";
 
 // Pages (Lazy loaded for performance)
@@ -18,16 +20,11 @@ const WhyChooseUs = lazy(() => import("./Pages/WhyChooseUs"));
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <ScrollToTop />
+      <Header />
+
       {/* Suspense shows a fallback while the lazy page is loading */}
-      <Suspense
-        fallback={
-          <div className="h-screen flex items-center justify-center text-uss-navy font-bold">
-            Loading Security Portal...
-          </div>
-        }
-      >
+      <Suspense fallback={<SecurityLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -38,6 +35,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <ScrollUpButton/>
     </BrowserRouter>
   );
 }
