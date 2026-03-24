@@ -151,7 +151,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, ArrowRight } from "lucide-react";
-
+import { Link } from "react-router-dom";
 // Assets (Imports remain the same as your code)
 import podar from "../assets/clients/podar_international.png";
 import scootsy from "../assets/clients/scootsy.jpeg";
@@ -232,13 +232,15 @@ export default function TestimonialSection() {
               and excellence.
             </p>
 
-            <button className="flex items-center gap-3 bg-[#0a1a5c] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-gray-200 transition-all group">
-              Explore Our Capabilities
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-2 transition-transform"
-              />
-            </button>
+            <Link to={"/service"} >
+              <button className="flex items-center gap-3 bg-[#0a1a5c] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-gray-200 transition-all group cursor-pointer">
+                Explore Our Capabilities
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-2 transition-transform"
+                />
+              </button>
+            </Link>
           </div>
 
           {/* Right Side: Animated Testimonial Card */}

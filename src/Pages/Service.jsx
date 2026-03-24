@@ -129,6 +129,7 @@ import {
   Globe,
   AlertTriangle,
   Star,
+  ShieldCheck,
 } from "lucide-react";
 import TrainingGallery from "../Components/TrainingGallery";
 import { Link } from "react-router-dom";
@@ -209,6 +210,11 @@ const operationalPoints = [
     icon: <Star size={20} />,
     desc: "Transparent feedback loops for service excellence.",
   },
+  {
+    title: "Statutory Compliance",
+    icon: <ShieldCheck size={20} />,
+    desc: "100% adherence to PSARA, ESIC, and PF norms to eliminate client risk.",
+  },
 ];
 
 export default function Expertise() {
@@ -233,7 +239,7 @@ export default function Expertise() {
   return (
     <main className="bg-white">
       {/* 1. HERO HEADER */}
-      <section className="pt-32 pb-20 px-6 bg-gray-50 mt-[-3rem]">
+      <section className="pt-20 pb-15 px-6 bg-gray-50 mt-[-3rem]">
         <div className="max-w-7xl mx-auto">
           <h4 className="text-[#0a1a5c] font-black text-xs uppercase tracking-[0.6em] mb-4">
             Operational Intelligence
@@ -252,7 +258,7 @@ export default function Expertise() {
       </section>
 
       {/* 2. SERVICES GRID */}
-      <section className="py-24 bg-[#13315c] relative overflow-hidden">
+      <section className="py-12 bg-[#13315c] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
           {services.map((service, i) => (
@@ -282,43 +288,6 @@ export default function Expertise() {
           ))}
         </div>
       </section>
-
-      {/* NEW SECTION: OPERATIONAL STANDARDS (Integrating Client Points) */}
-      {/* <section className="py-20 bg-white px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div>
-              <h3 className="text-[#0a1a5c] text-4xl font-black uppercase tracking-tighter">
-                Tactical <span className="text-gray-400">Framework</span>
-              </h3>
-              <p className="text-gray-500 mt-2 font-medium">
-                Standard Operating Procedures for all deployments.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {operationalPoints.map((point, idx) => (
-              <div
-                key={idx}
-                className="flex items-start gap-4 p-6 border border-gray-100 rounded-2xl hover:bg-gray-50 transition-colors"
-              >
-                <div className="text-[#0a1a5c] bg-[#fef200] p-2 rounded-lg">
-                  {point.icon}
-                </div>
-                <div>
-                  <h4 className="text-[#0a1a5c] font-black uppercase text-xs tracking-wider mb-1">
-                    {point.title}
-                  </h4>
-                  <p className="text-gray-500 text-[11px] leading-tight font-medium uppercase">
-                    {point.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
       <section className="py-20 bg-white px-6 overflow-hidden">
         <motion.div
           className="max-w-7xl mx-auto"

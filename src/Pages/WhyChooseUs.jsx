@@ -214,7 +214,7 @@ export default function WhyChooseUsPage() {
   return (
     <main className="bg-white overflow-hidden">
       {/* 1. HERO HEADER */}
-      <section className="pt-22 pb-20 px-6 bg-gray-50">
+      <section className="pt-16 pb-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
             <motion.div
@@ -244,7 +244,7 @@ export default function WhyChooseUsPage() {
       </section>
 
       {/* 2. PRIMARY REASONS GRID */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="py-10 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {primaryReasons.map((reason, index) => (
             <ReasonItem key={index} {...reason} index={index} />
@@ -253,7 +253,7 @@ export default function WhyChooseUsPage() {
       </section>
 
       {/* 3. THE RECRUITMENT PROTOCOL (Black Section) */}
-      <section className="py-24 bg-[#0a1a5c] text-white relative">
+      <section className="py-14 bg-[#0a1a5c] text-white relative">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h4 className="text-[#fef200] font-black text-xs uppercase tracking-[0.5em] mb-6">
@@ -309,7 +309,7 @@ export default function WhyChooseUsPage() {
       </section>
 
       {/* 4. VALUE ADDED SERVICES (White/Gold Section) */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-[#0a1a5c] text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
