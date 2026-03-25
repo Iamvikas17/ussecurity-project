@@ -220,7 +220,7 @@ export default function TestimonialSection() {
 
             <h2 className="text-[#0a1a5c] text-5xl md:text-6xl font-black leading-tight tracking-tighter">
               Here’s What{" "}
-              <span className="text-purple-700">
+              <span className="text-[#fef200] drop-shadow-[1px_1px_0_rgba(10,26,92,1)]">
                 Our <br /> Clients
               </span>{" "}
               Have Said.
@@ -232,9 +232,9 @@ export default function TestimonialSection() {
               and excellence.
             </p>
 
-            <Link to={"/service"} >
+            <Link to={"/service"}>
               <button className="flex items-center gap-3 bg-[#0a1a5c] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-gray-200 transition-all group cursor-pointer">
-                Explore Our Capabilities
+                Explore Our Services
                 <ArrowRight
                   size={18}
                   className="group-hover:translate-x-2 transition-transform"
@@ -257,11 +257,11 @@ export default function TestimonialSection() {
                 <div className="flex items-start gap-6">
                   <div className="relative">
                     <Quote
-                      className="text-purple-600 mb-4"
+                      className="text-[#fef200] drop-shadow-[1px_1px_0_rgba(10,26,92,1)] mb-4"
                       size={48}
                       fill="currentColor"
                     />
-                    <div className="w-24 h-24 rounded-full border-2 border-purple-600 flex items-center justify-center p-4 bg-white shadow-xl">
+                    <div className="w-24 h-24 rounded-full border-2 text-uss-gold flex items-center justify-center p-4 bg-white shadow-xl">
                       <img
                         src={testimonials[current].logo}
                         alt={testimonials[current].client}
