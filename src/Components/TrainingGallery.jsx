@@ -337,16 +337,17 @@ import Training2 from "../assets/Training/T10.jpeg";
 import Training3 from "../assets/Training/t16.jpeg";
 import Training4 from "../assets/Training/T5.jpeg";
 import Training5 from "../assets/Training/NewT2.webp";
-import Training6 from "../assets/Training/NewT1.webp";
+// import Training6 from "../assets/Training/NewT1.webp";
 import Training7 from "../assets/Training/NewT4.jpg";
-import Training8 from "../assets/Training/NewT3.avif";
+// import Training8 from "../assets/Training/NewT3.avif";
+import Training6 from "../assets/Home/Gallery5.jpeg";
+import Training8 from "../assets/Home/Gallery3.jpeg";
 
 const trainingPhotos = [
   {
     src: Training1,
     // Large featured image on mobile and desktopmd:col-span-6 md:row-span-2 col-span-2 h-auto min-h-[300px]
-    gridClass:
-      "md:col-span-6 md:row-span-2 col-span-2 h-auto",
+    gridClass: "md:col-span-6 md:row-span-2 col-span-2 h-auto",
     label: "Fire Safety Drill",
   },
   {
@@ -361,10 +362,10 @@ const trainingPhotos = [
     label: "SOP Training",
   },
   {
-    src: Training4,
+    src: Training8,
     // Taller aspect for key training visuals on mobile
     gridClass: "md:col-span-3 md:row-span-2 col-span-2 row-span-2",
-    label: "Fire Training",
+    label: "Vehicle Checking"
   },
   {
     src: Training5,
@@ -382,9 +383,9 @@ const trainingPhotos = [
     label: "Self Defense",
   },
   {
-    src: Training8,
+    src: Training4,
     gridClass: "md:col-span-3 md:row-span-1 col-span-2",
-    label: "First Aid",
+    label: "Fire Training",
   },
 ];
 
@@ -407,7 +408,7 @@ export default function TrainingGallery() {
               Behind the Force
             </h4>
             <h2 className="text-white text-4xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-              Vanguard  <br />{" "}
+              Vanguard <br />{" "}
               <span className="text-[#fef200] italic text-glow">TRAINING.</span>
             </h2>
           </div>
@@ -441,9 +442,9 @@ export default function TrainingGallery() {
 
               <img
                 src={photo.src}
-                alt={photo.label}  
+                alt={photo.label}
                 // {`w-full ${i === 0 ? 'h-auto object-contain' : 'h-full object-cover'} transition-all duration-1000 lg:group-hover:scale-110`
-                className={`w-full ${i === 0 ? 'h-auto object-contain' : 'h-full object-cover'} transition-all duration-1000 lg:group-hover:scale-110`}
+                className={`w-full ${i === 0 ? "h-auto object-contain" : "h-full object-cover"} transition-all duration-1000 lg:group-hover:scale-110`}
               />
 
               <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 z-20 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-4 lg:group-hover:translate-y-0 transition-all duration-500">
