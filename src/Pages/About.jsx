@@ -31,7 +31,7 @@ const AboutPage = () => {
               <div className="flex items-center gap-4 mb-6">
                 <span className="h-[3px] w-12 bg-[#0a1a5c]"></span>
                 <h4 className="text-[#0a1a5c] font-black text-sm uppercase tracking-[0.5em]">
-                 About us
+                  About us
                 </h4>
               </div>
 
@@ -223,7 +223,7 @@ const AboutPage = () => {
             </div>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Experties in Warehouse management and providing complete warehouse
+              {/* Experties in Warehouse management and providing complete warehouse
               solution <br />
               worked along with warehouses such as Amazon,Flipkart,Voltas,DHL
               and many more in warehouse industries.
@@ -231,7 +231,16 @@ const AboutPage = () => {
               Working alongside the founder, Col. Rohit Kapila ensures that our
               rapid response and training protocols remain the gold standard in
               the industry, bringing military-grade discipline to every
-              deployment.
+              deployment. */}
+              Specialized Protection Col Kapila, retd has joined us to work
+              alongside the founder to provide complete warehouse security
+              solutions, including use of latest trends in AI in security and
+              surveillance, rapid response and training protocols bringing
+              military-grade discipline to every deployment, to ensure our rapid
+              response and training protocols remain the gold standard in the
+              industry, Col Kapila has been Head Security & Loss Prevention,
+              with clients like Amazon & Flipkart (including grocery) ,Zepto,
+              Meesho, Kohler, Tata Motors, Wildcraft, Croma etc
             </p>
 
             <div className="flex gap-4 items-center">

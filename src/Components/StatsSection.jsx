@@ -77,7 +77,7 @@ export default function StatsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-white/5">
           <StatItem icon={Users} endValue={1000} label="Our Employees" />
           <StatItem icon={Globe} endValue={5} label="States Covered" />
-          <StatItem icon={Smile} endValue={100} label="Happy Clients" />
+          <StatItem icon={Smile} endValue={500} label="Happy Clients" />
           <StatItem icon={Trophy} endValue={15} label="Years of Excellence" />
         </div>
       </div>

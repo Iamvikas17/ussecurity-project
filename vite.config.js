@@ -4,5 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 import { ESLint } from "eslint";
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(),new ESLint()],
+  plugins: [react(), tailwindcss(), new ESLint()],
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://backend-of-uss.onrender.com",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 });
